@@ -1,9 +1,8 @@
 from setuptools import setup,find_packages
-# from typing import LIST
+from typing import List
 
 HYPEN_E_DOT = '-e .'
-
-def get_requirements(file_path:str):
+def get_requirements(file_path:str)->List[str]:
     with open(file_path,"r") as f:
         requirements=f.readlines()
         for i in range(len(requirements)):
