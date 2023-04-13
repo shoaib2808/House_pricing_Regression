@@ -4,7 +4,7 @@ from sklearn.metrics import r2_score,mean_absolute_error,mean_squared_error
 import pickle
 
 
-def evaluate_model(self,y_pred,y_test):
+def evaluate_model(y_pred,y_test):
         r2=r2_score(y_pred,y_test)
         mae=mean_absolute_error(y_pred,y_test)
         mse=mean_squared_error(y_pred,y_test)

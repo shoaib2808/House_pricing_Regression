@@ -10,6 +10,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from dataclasses import dataclass
+from src.logger import logging
 
 
 @dataclass
@@ -63,12 +64,16 @@ class Data_Transformation_class:
         x_test = test_df.iloc[:,:-1]
         y_test= pd.DataFrame(test_df.iloc[:,-1])
 
+        logging.info("Data splitting for test and traing")
+
         process= self.get_data_transformation_object()
 
-       
+        logging.info("Pipeline object created successfully")   
+
         x_train=process.fit_transform(x_train)
         x_test=process.transform(x_test)
 
+        logging.info("Model transformation done")
         # print(x_train.head())
         # print(y_train.head())
 

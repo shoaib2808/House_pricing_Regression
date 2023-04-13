@@ -1,0 +1,25 @@
+========================Logging started======================== 
+
+
+[ 2023-04-13 19:31:22,202 ] 23 root - INFO - Raw data reading
+[ 2023-04-13 19:31:22,346 ] 26 root - INFO - Raw data stored
+[ 2023-04-13 19:31:22,447 ] 31 root - INFO - Train data stored
+[ 2023-04-13 19:31:22,494 ] 33 root - INFO - Test data stored
+[ 2023-04-13 19:31:22,572 ] 67 root - INFO - Data splitting for test and traing
+[ 2023-04-13 19:31:22,572 ] 71 root - INFO - Pipeline object created successfully
+[ 2023-04-13 19:31:22,647 ] 76 root - INFO - Model transformation done
+[ 2023-04-13 19:31:22,654 ] 31 root - INFO - Data training started
+[ 2023-04-13 19:31:22,666 ] 42 root - INFO - ==============================
+[ 2023-04-13 19:31:22,666 ] 43 root - INFO - Model : LinearRegression, r2_score : 0.905380747944611, mean squre error : 1505373.4925510043 , mean absolute error : 818.5804124928552
+[ 2023-04-13 19:31:22,666 ] 44 root - INFO - ==============================
+[ 2023-04-13 19:31:22,680 ] 42 root - INFO - ==============================
+[ 2023-04-13 19:31:22,680 ] 43 root - INFO - Model : Ridge, r2_score : 0.9053654489051239, mean squre error : 1505616.897228224 , mean absolute error : 818.7978716968256
+[ 2023-04-13 19:31:22,680 ] 44 root - INFO - ==============================
+[ 2023-04-13 19:31:22,998 ] 42 root - INFO - ==============================
+[ 2023-04-13 19:31:22,998 ] 43 root - INFO - Model : Lasso, r2_score : 0.9054770958275277, mean squre error : 1503840.6168850537 , mean absolute error : 819.7031975329884
+[ 2023-04-13 19:31:22,998 ] 44 root - INFO - ==============================
+[ 2023-04-13 19:31:23,022 ] 42 root - INFO - ==============================
+[ 2023-04-13 19:31:23,022 ] 43 root - INFO - Model : ElasticNet, r2_score : 0.8313553483422833, mean squre error : 2683102.886053359 , mean absolute error : 1081.462611683036
+[ 2023-04-13 19:31:23,022 ] 44 root - INFO - ==============================
+[ 2023-04-13 19:31:23,022 ] 54 root - INFO - Best model is Lasso
+[ 2023-04-13 19:31:23,022 ] 60 root - INFO - Best object model saved 
